@@ -1,0 +1,39 @@
+package eva2_2_lista_simple;
+
+/**
+ *
+ * @author diegd
+ */
+public class Nodo {
+
+    //DOS ATRIBUTOS
+    private int valor;
+    private Nodo siguiente;
+
+    //CONTRUCTORES
+    public Nodo() {
+        siguiente = null;//ESTO ES MUY IMPORTANTE
+    }
+
+    public Nodo(int valor) {//PONER EL VALOR A GUARDAR, AL MOMENTO DE CREAR EL NODO
+        this.valor = valor;
+        siguiente = null;
+    }
+
+    public void setValor(int valor) {//CREACION DE LOS set y get
+        this.valor = valor;
+
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setSiguiente(Nodo siguiente) {
+      this.siguiente = siguiente;
+    }
+
+    public Nodo getSiguiente() {
+        return siguiente;
+    }
+}
